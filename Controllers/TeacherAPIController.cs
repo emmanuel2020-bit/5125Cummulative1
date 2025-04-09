@@ -110,8 +110,70 @@ namespace HTTP5125Cummulative1.Controllers
 
             return SelectedTeacher;
         }
+
+
+        /// <summary>
+        /// Adds a new teacher to the database.
+        /// </summary>
+        /// <param name="teacher">The teacher to add.</param>
+        /// <returns>A response indicating the result of the operation.</returns>
+        [HttpPost]
+        public IActionResult AddTeacher([FromBody] Teacher teacher)
+        {
+            if (string.IsNullOrEmpty(teacher.TeacherFName) || string.IsNullOrEmpty(teacher.TeacherLName))
+            {
+                return BadRequest("Teacher name cannot be empty.");
+            }
+
+            if (teacher.HireDate > DateTime.Now)
+            {
+                return BadRequest("Hire date cannot be in the future.");
+            }
+
+            using (var conn = _context.AccessDatabase())
+            {
+                conn.Open();
+                var command = new MySqlCommand("INSERT INTO teachers (teacherfname, teacherlname, hiredate, salary) VALUES (@TeacherFName, @TeacherLName, @HireDate, @Salary)", conn);
+                command.Parameters.AddWithValue("@TeacherFName", teacher.TeacherFName);
+                command.Parameters.AddWithValue("@TeacherLName", teacher.TeacherLName);
+                command.Parameters.AddWithValue("@HireDate", teacher.HireDate);
+                command.Parameters.AddWithValue("@Salary", teacher.Salary);
+                command.ExecuteNonQuery();
+            }
+
+            return Ok("Teacher added successfully.");
+        }
+
+
+
+        /// <summary>
+        /// Deletes a teacher from the database.
+        /// </summary>
+        /// <param name="id">The ID of the teacher to delete.</param>
+        /// <returns>A response indicating the result of the operation.</returns>
+        [HttpDelete("{id}")]
+        public IActionResult DeleteTeacher(int id)
+        {
+            using (var conn = _context.AccessDatabase())
+            {
+                conn.Open();
+                var cmd = new MySqlCommand("DELETE FROM teachers WHERE teacherid = @TeacherId", conn);
+                cmd.Parameters.AddWithValue("@TeacherId", id);
+                var rowsAffected = cmd.ExecuteNonQuery();
+
+                if (rowsAffected == 0)
+                {
+                    return NotFound("Teacher not found.");
+                }
+            }
+
+            return Ok("Teacher deleted successfully.");
+        }
+
+
     }
 }
 
 
 
+ 

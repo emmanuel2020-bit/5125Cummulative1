@@ -60,3 +60,4 @@ C:\Users\USER\source\repos\HTTP5125Cummulative1\obj\Debug\net8.0\refint\HTTP5125
 C:\Users\USER\source\repos\HTTP5125Cummulative1\obj\Debug\net8.0\HTTP5125Cummulative1.pdb
 C:\Users\USER\source\repos\HTTP5125Cummulative1\obj\Debug\net8.0\HTTP5125Cummulative1.genruntimeconfig.cache
 C:\Users\USER\source\repos\HTTP5125Cummulative1\obj\Debug\net8.0\ref\HTTP5125Cummulative1.dll
+C:\Users\USER\source\repos\HTTP5125Cummulative1\obj\Debug\net8.0\HTTP5125Cummulative1.sourcelink.json

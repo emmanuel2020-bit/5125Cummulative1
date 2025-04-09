@@ -1,0 +1,40 @@
+﻿@model HTTP5125Cummulative1.Models.Teacher
+
+<h2>Delete Teacher</h2>
+
+<h3>Are you sure you want to delete this teacher?</h3>
+<div>
+    <hr />
+    <dl >
+        <dt >
+            First Name
+        </dt>
+        <dd>
+            @Model.TeacherFName
+        </dd>
+        <dt >
+            Last Name
+        </dt>
+        <dd >
+            @Model.TeacherLName
+        </dd>
+        <dt >
+            Hire Date
+        </dt>
+        <dd >
+            @Model.HireDate.ToShortDateString()
+        </dd>
+        <dt >
+            Salary
+        </dt>
+        <dd >
+            @Model.Salary
+        </dd>
+    </dl>
+
+    <form asp-action="DeleteConfirm" method="post">
+        <input type="hidden" asp-for="TeacherId" />
+        <input type="submit" value="Delete" class="btn btn-danger" /> <br />
+        <a href="/TeacherPage/List">Cancel</a>
+    </form>
+</div>

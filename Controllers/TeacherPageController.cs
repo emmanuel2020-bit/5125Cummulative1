@@ -32,6 +32,52 @@ namespace HTTP5125Cummulative1.Controllers
             Teacher SelectedTeacher = _api.FindTeacher(id);
             return View(SelectedTeacher);
         }
+
+
+
+        // GET: TeacherPage/New
+        [HttpGet]
+        [Route("[controller]/New")]
+        public IActionResult New()
+        {
+            return View();
+        }
+
+
+        // POST: TeacherPage/Create
+        [HttpPost]
+        [Route("[controller]/Create")]
+        public IActionResult Create(Teacher teacher)
+        {
+            if (ModelState.IsValid)
+            {
+                _api.AddTeacher(teacher);
+                return RedirectToAction("List");
+            }
+            return View("New", teacher);
+        }
+
+
+        // GET: TeacherPage/Delete/{id}
+        [HttpGet]
+        [Route("[controller]/DeleteConfirm/{id}")]
+        public IActionResult DeleteConfirm(int id)
+        {
+            Teacher SelectedTeacher = _api.FindTeacher(id);
+            return View(SelectedTeacher);
+        }
+
+        // POST: TeacherPage/Delete/{id}
+        [HttpPost, ActionName("Delete")]
+        [Route("[controller]/Delete/{id}")]
+        public IActionResult Delete(int id)
+        {
+            _api.DeleteTeacher(id);
+            return RedirectToAction("List");
+        }
+       
+        
+
     }
 }
 
