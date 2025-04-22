@@ -1,0 +1,33 @@
+﻿@model HTTP5125Cummulative1.Models.Teacher
+
+<h2>Edit Teacher</h2>
+
+<form asp-action="Edit" method="post">
+    <div class="form-group">
+        <label asp-for="TeacherFName" class="control-label"></label>
+        <input asp-for="TeacherFName" class="form-control" />
+        <span asp-validation-for="TeacherFName" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="TeacherLName" class="control-label"></label>
+        <input asp-for="TeacherLName" class="form-control" />
+        <span asp-validation-for="TeacherLName" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="HireDate" class="control-label"></label>
+        <input asp-for="HireDate" class="form-control" />
+        <span asp-validation-for="HireDate" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Salary" class="control-label"></label>
+        <input asp-for="Salary" class="form-control" />
+        <span asp-validation-for="Salary" class="text-danger"></span>
+    </div>
+    <input type="hidden" asp-for="TeacherId" />
+    <div class="form-group">
+        <input type="submit" value="Update" class="btn btn-primary" />
+    </div>
+</form>
+<div>
+    <a href="/TeacherPage/List">Back to List</a>
+</div>

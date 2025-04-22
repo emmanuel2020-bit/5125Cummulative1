@@ -75,9 +75,42 @@ namespace HTTP5125Cummulative1.Controllers
             _api.DeleteTeacher(id);
             return RedirectToAction("List");
         }
-       
-        
 
+
+        // GET: TeacherPage/Edit/{id}
+        [HttpGet]
+        [Route("[controller]/Edit/{id}")]
+        public IActionResult Edit(int id)
+        {
+            Teacher SelectedTeacher = _api.FindTeacher(id);
+            if (SelectedTeacher == null)
+            {
+                return NotFound("Teacher not found.");
+            }
+            return View(SelectedTeacher);
+        }
+
+        // POST: TeacherPage/Edit
+        [HttpPost]
+        [Route("[controller]/Edit")]
+        public IActionResult Edit(Teacher teacher)
+        {
+            if (!ModelState.IsValid)
+            {
+                return View(teacher);
+            }
+
+            IActionResult result = _api.UpdateTeacher(teacher.TeacherId, teacher);
+            if (result is NotFoundObjectResult)
+            {
+                ModelState.AddModelError("", "Teacher not found.");
+                return View(teacher);
+            }
+
+            return RedirectToAction("List");
+        }
     }
+
+
 }
 

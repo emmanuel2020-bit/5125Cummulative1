@@ -3,20 +3,24 @@
   "WorkspaceRootPath": "C:\\Users\\USER\\source\\repos\\HTTP5125Cummulative1\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{6AF79D90-5150-49C8-9CFF-94F95D1AF17F}|HTTP5125Cummulative1.csproj|c:\\users\\user\\source\\repos\\http5125cummulative1\\views\\teacherpage\\deleteconfirm.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{6AF79D90-5150-49C8-9CFF-94F95D1AF17F}|HTTP5125Cummulative1.csproj|solutionrelative:views\\teacherpage\\deleteconfirm.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{6AF79D90-5150-49C8-9CFF-94F95D1AF17F}|HTTP5125Cummulative1.csproj|c:\\users\\user\\source\\repos\\http5125cummulative1\\views\\teacherpage\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6AF79D90-5150-49C8-9CFF-94F95D1AF17F}|HTTP5125Cummulative1.csproj|solutionrelative:views\\teacherpage\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6AF79D90-5150-49C8-9CFF-94F95D1AF17F}|HTTP5125Cummulative1.csproj|c:\\users\\user\\source\\repos\\http5125cummulative1\\views\\teacherpage\\new.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{6AF79D90-5150-49C8-9CFF-94F95D1AF17F}|HTTP5125Cummulative1.csproj|solutionrelative:views\\teacherpage\\new.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{6AF79D90-5150-49C8-9CFF-94F95D1AF17F}|HTTP5125Cummulative1.csproj|c:\\users\\user\\source\\repos\\http5125cummulative1\\controllers\\teacherpagecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6AF79D90-5150-49C8-9CFF-94F95D1AF17F}|HTTP5125Cummulative1.csproj|solutionrelative:controllers\\teacherpagecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{6AF79D90-5150-49C8-9CFF-94F95D1AF17F}|HTTP5125Cummulative1.csproj|c:\\users\\user\\source\\repos\\http5125cummulative1\\controllers\\teacherapicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6AF79D90-5150-49C8-9CFF-94F95D1AF17F}|HTTP5125Cummulative1.csproj|solutionrelative:controllers\\teacherapicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6AF79D90-5150-49C8-9CFF-94F95D1AF17F}|HTTP5125Cummulative1.csproj|c:\\users\\user\\source\\repos\\http5125cummulative1\\controllers\\teacherpagecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6AF79D90-5150-49C8-9CFF-94F95D1AF17F}|HTTP5125Cummulative1.csproj|solutionrelative:controllers\\teacherpagecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6AF79D90-5150-49C8-9CFF-94F95D1AF17F}|HTTP5125Cummulative1.csproj|c:\\users\\user\\source\\repos\\http5125cummulative1\\views\\teacherpage\\deleteconfirm.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6AF79D90-5150-49C8-9CFF-94F95D1AF17F}|HTTP5125Cummulative1.csproj|solutionrelative:views\\teacherpage\\deleteconfirm.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6AF79D90-5150-49C8-9CFF-94F95D1AF17F}|HTTP5125Cummulative1.csproj|c:\\users\\user\\source\\repos\\http5125cummulative1\\views\\teacherpage\\new.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6AF79D90-5150-49C8-9CFF-94F95D1AF17F}|HTTP5125Cummulative1.csproj|solutionrelative:views\\teacherpage\\new.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{6AF79D90-5150-49C8-9CFF-94F95D1AF17F}|HTTP5125Cummulative1.csproj|c:\\users\\user\\source\\repos\\http5125cummulative1\\views\\teacherpage\\list.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -46,11 +50,24 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "C:\\Users\\USER\\source\\repos\\HTTP5125Cummulative1\\Views\\TeacherPage\\Edit.cshtml",
+              "RelativeDocumentMoniker": "Views\\TeacherPage\\Edit.cshtml",
+              "ToolTip": "C:\\Users\\USER\\source\\repos\\HTTP5125Cummulative1\\Views\\TeacherPage\\Edit.cshtml",
+              "RelativeToolTip": "Views\\TeacherPage\\Edit.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAABAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-22T18:37:21.76Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "New.cshtml",
               "DocumentMoniker": "C:\\Users\\USER\\source\\repos\\HTTP5125Cummulative1\\Views\\TeacherPage\\New.cshtml",
               "RelativeDocumentMoniker": "Views\\TeacherPage\\New.cshtml",
@@ -63,7 +80,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "Show.cshtml",
               "DocumentMoniker": "C:\\Users\\USER\\source\\repos\\HTTP5125Cummulative1\\Views\\TeacherPage\\Show.cshtml",
               "RelativeDocumentMoniker": "Views\\TeacherPage\\Show.cshtml",
@@ -75,7 +92,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "List.cshtml",
               "DocumentMoniker": "C:\\Users\\USER\\source\\repos\\HTTP5125Cummulative1\\Views\\TeacherPage\\List.cshtml",
               "RelativeDocumentMoniker": "Views\\TeacherPage\\List.cshtml",
@@ -83,18 +100,17 @@
               "RelativeToolTip": "Views\\TeacherPage\\List.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAA2AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-04-03T19:21:11.051Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-03T19:21:11.051Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
               "Title": "TeacherPageController.cs",
               "DocumentMoniker": "C:\\Users\\USER\\source\\repos\\HTTP5125Cummulative1\\Controllers\\TeacherPageController.cs",
               "RelativeDocumentMoniker": "Controllers\\TeacherPageController.cs",
               "ToolTip": "C:\\Users\\USER\\source\\repos\\HTTP5125Cummulative1\\Controllers\\TeacherPageController.cs",
               "RelativeToolTip": "Controllers\\TeacherPageController.cs",
-              "ViewState": "AgIAAEAAAAAAAAAAAAAgwEsAAAAsAAAAAAAAAA==",
+              "ViewState": "AgIAAEgAAAAAAAAAAAA4wHEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-03T19:18:42.055Z",
               "EditorCaption": ""
@@ -107,14 +123,14 @@
               "RelativeDocumentMoniker": "Controllers\\TeacherAPIController.cs",
               "ToolTip": "C:\\Users\\USER\\source\\repos\\HTTP5125Cummulative1\\Controllers\\TeacherAPIController.cs",
               "RelativeToolTip": "Controllers\\TeacherAPIController.cs",
-              "ViewState": "AgIAAFYAAAAAAAAAAAAqwJ8AAAAXAAAAAAAAAA==",
+              "ViewState": "AgIAAMUAAAAAAAAAAAAmwOEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-03T19:05:58.036Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "DeleteConfirm.cshtml",
               "DocumentMoniker": "C:\\Users\\USER\\source\\repos\\HTTP5125Cummulative1\\Views\\TeacherPage\\DeleteConfirm.cshtml",
               "RelativeDocumentMoniker": "Views\\TeacherPage\\DeleteConfirm.cshtml",
@@ -127,7 +143,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\USER\\source\\repos\\HTTP5125Cummulative1\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
@@ -139,7 +155,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "Teacher.cs",
               "DocumentMoniker": "C:\\Users\\USER\\source\\repos\\HTTP5125Cummulative1\\Models\\Teacher.cs",
               "RelativeDocumentMoniker": "Models\\Teacher.cs",
@@ -152,7 +168,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "SchoolDbContext.cs",
               "DocumentMoniker": "C:\\Users\\USER\\source\\repos\\HTTP5125Cummulative1\\Models\\SchoolDbContext.cs",
               "RelativeDocumentMoniker": "Models\\SchoolDbContext.cs",
@@ -160,8 +176,7 @@
               "RelativeToolTip": "Models\\SchoolDbContext.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-03T18:43:06.218Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-03T18:43:06.218Z"
             }
           ]
         }

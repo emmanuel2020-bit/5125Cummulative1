@@ -171,6 +171,60 @@ namespace HTTP5125Cummulative1.Controllers
         }
 
 
+        /// <summary>
+        /// Updates an existing teacher in the database.
+        /// </summary>
+        /// <param name="id">The ID of the teacher to update.</param>
+        /// <param name="teacher">The updated teacher object.</param>
+        /// <returns>A response indicating the result of the operation.</returns>
+        [HttpPut("{id}")]
+        public IActionResult UpdateTeacher(int id, [FromBody] Teacher teacher)
+        {
+            if (id != teacher.TeacherId)
+            {
+                return BadRequest("Teacher ID mismatch.");
+            }
+
+            if (string.IsNullOrEmpty(teacher.TeacherFName) || string.IsNullOrEmpty(teacher.TeacherLName))
+            {
+                return BadRequest("Teacher name cannot be empty.");
+            }
+
+            if (teacher.HireDate > DateTime.Now)
+            {
+                return BadRequest("Hire date cannot be in the future.");
+            }
+
+            if (teacher.Salary < 0)
+            {
+                return BadRequest("Salary cannot be less than 0.");
+            }
+
+            using (var conn = _context.AccessDatabase())
+            {
+                conn.Open();
+                var command = new MySqlCommand(
+                    "UPDATE teachers SET teacherfname = @TeacherFName, teacherlname = @TeacherLName, hiredate = @HireDate, salary = @Salary WHERE teacherid = @TeacherId",
+                    conn
+                );
+                command.Parameters.AddWithValue("@TeacherId", teacher.TeacherId);
+                command.Parameters.AddWithValue("@TeacherFName", teacher.TeacherFName);
+                command.Parameters.AddWithValue("@TeacherLName", teacher.TeacherLName);
+                command.Parameters.AddWithValue("@HireDate", teacher.HireDate);
+                command.Parameters.AddWithValue("@Salary", teacher.Salary);
+
+                var rowsAffected = command.ExecuteNonQuery();
+
+                if (rowsAffected == 0)
+                {
+                    return NotFound("Teacher not found.");
+                }
+            }
+
+            return Ok("Teacher updated successfully.");
+        }
+
+
     }
 }
 

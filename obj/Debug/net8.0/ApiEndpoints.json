@@ -33,6 +33,27 @@
   },
   {
     "ContainingType": "HTTP5125Cummulative1.Controllers.TeacherAPIController",
+    "Method": "UpdateTeacher",
+    "RelativePath": "api/Teacher/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "teacher",
+        "Type": "HTTP5125Cummulative1.Models.Teacher",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "HTTP5125Cummulative1.Controllers.TeacherAPIController",
     "Method": "FindTeacher",
     "RelativePath": "api/Teacher/FindTeacher/{id}",
     "HttpMethod": "GET",
@@ -133,6 +154,58 @@
     "ContainingType": "HTTP5125Cummulative1.Controllers.TeacherPageController",
     "Method": "DeleteConfirm",
     "RelativePath": "TeacherPage/DeleteConfirm/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "HTTP5125Cummulative1.Controllers.TeacherPageController",
+    "Method": "Edit",
+    "RelativePath": "TeacherPage/Edit",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "TeacherId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "TeacherFName",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "TeacherLName",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "HireDate",
+        "Type": "System.DateTime",
+        "IsRequired": false
+      },
+      {
+        "Name": "Salary",
+        "Type": "System.Decimal",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "HTTP5125Cummulative1.Controllers.TeacherPageController",
+    "Method": "Edit",
+    "RelativePath": "TeacherPage/Edit/{id}",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
